@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `category` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(45) NOT NULL UNIQUE,
+    `deleted` BOOLEAN NOT NULL DEFAULT false,
+    `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+);
